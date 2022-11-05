@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class list {
@@ -48,7 +46,12 @@ public class list {
         System.out.println("``````````");
         String[] array = new String[]{"a", "b", "c"};
         Stream<String> stream1 = Arrays.stream(array);
-        stream1.forEach(System.out::println);
+
+        // 람다식 예제 : https://sehoonoverflow.tistory.com/26
+        // stream1.map(elem -> elem.toUpperCase()).forEach(elem -> System.out.println(elem));
+        stream1.map(elem -> elem.toUpperCase()).collect(Collectors.toList()).forEach(System.out::println);
+
+
         System.out.println("``````````");
         // 빌더 사용도 가능
 
