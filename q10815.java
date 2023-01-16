@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /*
     숫자 카드 n개
-    정수 m개가 주어졌을 때, 카드 n개중에 포함 되는지
+    정수 m개가 주어졌을 때, 카드에 그 수가 포함 되는지
     n배열에 m[i]가 있는지 찾기 -> 이진탐색
  */
 public class q10815 {

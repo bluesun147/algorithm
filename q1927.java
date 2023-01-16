@@ -12,14 +12,9 @@ import java.util.PriorityQueue;
     left = parent * 2
     right = parent * 2 + 1
 
-    삽입
-
-
     기능
      - n : 배열에 자연수 x 넣기
      - 0 : 가장 작은 값 출력 후 제거
-
-
  */
 public class q1927 {
     public static void main(String[] args) throws IOException {
